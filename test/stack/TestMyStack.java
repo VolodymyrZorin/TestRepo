@@ -40,8 +40,9 @@ public class TestMyStack {
 	}
 	@Test
 	public void testPush() {
-		int arrElement = TestArray.push(10);
-		assertEquals(10, arrElement);
+		TestArray.push(10);
+		int lastElement = TestArray.peek();
+		assertEquals(10, lastElement);
 	}
 	
 	@Test

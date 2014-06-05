@@ -23,13 +23,12 @@ public class MyStack {
         size = 0;//edit
     }
     
-    public Integer push(Integer item){
+    public void push(Integer item){
         if(size == MAX_STACK_SIZE){
             throw new IndexOutOfBoundsException();
         }
         arr[size] = item;//edit
         size++;//edit
-        return item;
     }  
     
     public Integer peek(){
